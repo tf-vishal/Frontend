@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+
+  <body>
+    <h1> Homepage</h1>
+    <a href="https://www.theodinproject.com/about">About The Odin Project </a>
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project, This opens in new tab </a>
+
+    <a href="https://example.com" target="_blank" rel="noreferrer">Visit Example</a>
+
+
+    <!--You may have noticed that we snuck in the rel attribute above. This attribute is used to describe the relation between the current page and the linked document.-->
+    <!--noopener: The noopener value of the rel attribute ensures that a link opened in a new tab or window cannot interact with or access the original page. Without it, the new page can use JavaScript to manipulate the original page, which poses a security risk.
+    
+    noreferrer: The noreferrer value of the rel attribute provides both privacy and security. It prevents the new page from knowing where the user came from (hiding the referrer) and also includes the behavior of noopener, preventing the new page from accessing the original page.-->
+
+    <a href="pages/about.html">About</a>
+    
+    <h2>Images</h2>
+    <img src="../odin-links-and-images/images/dog.jpg" alt="Doggo pic" height="310" width="310">
+
+  </body>
+</html>
