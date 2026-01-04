@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 DOM Manipulation Practice</h1>
+
+    <!-- Task 1: Basic Element Creation -->
+    <div class="practice-section">
+      <h2>Task 1: Create Red Paragraph</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> Create a paragraph with red text that says "Hey I'm red!"</p>
+        <p class="hint">💡 Hint: Use createElement("p"), style.color, and textContent</p>
+      </div>
+      <div id="task1-output" class="output-area"></div>
+    </div>
+
+    <!-- Task 2: Blue H3 -->
+    <div class="practice-section">
+      <h2>Task 2: Create Blue H3</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> Create an h3 with blue text that says "I'm a blue h3!"</p>
+        <p class="hint">💡 Hint: Same as Task 1, but use "h3" and blue color</p>
+      </div>
+      <div id="task2-output" class="output-area"></div>
+    </div>
+
+    <!-- Task 3: Nested Elements -->
+    <div class="practice-section">
+      <h2>Task 3: Complex Nesting</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> Create a div with:</p>
+        <ul>
+          <li>Black border (2px solid black)</li>
+          <li>Pink background color</li>
+          <li>An h1 inside that says "I'm in a div"</li>
+          <li>A p inside that says "ME TOO!"</li>
+        </ul>
+        <p class="hint">💡 Hint: Create div → style it → create h1 and p → append them to div → append div to output</p>
+      </div>
+      <div id="task3-output" class="output-area"></div>
+    </div>
+    <button id="btn">Click ME</button>
+    <!-- Task 4: Click Events -->
+    <div class="practice-section">
+      <h2>Task 4: Alert on Click</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> Make the button below show an alert saying "Hello World!" when clicked</p>
+        <p class="hint">💡 Hint: querySelector("#alert-btn") then addEventListener("click", ...)</p>
+      </div>
+      <button id="alert-btn">Click Me!</button>
+    </div>
+
+    <!-- Task 5: Todo List -->
+    <div class="practice-section">
+      <h2>Task 5: Dynamic Todo List</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> When button is clicked, add the input text as a new list item</p>
+        <p class="hint">💡 Hint: Get input value → create li → set textContent → appendChild to ul</p>
+      </div>
+      <input type="text" id="todo-input" placeholder="Enter a task...">
+      <button id="add-btn">Add Task</button>
+      <ul id="task-list"></ul>
+    </div>
+
+    <!-- Task 6: Change Colors -->
+    <div class="practice-section">
+      <h2>Task 6: Color Changer</h2>
+      <div class="task">
+        <p><strong>Mission:</strong> Make each button change the background color of the box below</p>
+        <p class="hint">💡 Hint: querySelectorAll(".color-btn"), forEach, addEventListener, e.target.dataset.color</p>
+      </div>
+      <button class="color-btn" data-color="#ff6b6b">Red</button>
+      <button class="color-btn" data-color="#4ecdc4">Cyan</button>
+      <button class="color-btn" data-color="#ffe66d">Yellow</button>
+      <button class="color-btn" data-color="#95e1d3">Green</button>
+      <div id="color-box" class="output-area">
+        Click a button to change my color!
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Link your JavaScript file here -->
+  <script src="script.js"></script>
+</body>
+</html>
