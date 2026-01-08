@@ -1,0 +1,39 @@
+* {
+    /* This is a universal selector, whtever you write here is applied to everything.*/
+    /* background-color: #f3f2ef; */
+    /* We nvr give bg color in universal selector */
+
+}
+
+body{
+    background-color: #f3f2ef;
+}
+
+header{
+    background-color: white;
+}
+
+.mid-size {
+    font-weight: bolder;
+    font-size: medium;
+
+    /* this is class selector */
+}
+
+#head-text{
+    /* This is id selector  */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+/* input[disabled]{
+    background-color: beige;
+} */
+
+div span {
+    color: aqua;
+}
+
+a:hover {
+    text-decoration: none;
+}
