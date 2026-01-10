@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productList.css">
+</head>
+
+<body>
+    <div id="productList">
+        <!-- Navbar -->
+        <nav id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header-wrapper d-flex justify-content-between">
+                        <!-- We have made this div flex, with justify content as space between -->
+                         <div class="logo d-inline-block">
+                            <a href="index.html" class="text-decoration-none">Shop Cart</a>
+                         </div>
+                         <div class="user-action d-flex flex-row">
+                            <a href="cart.html" >Cart</a>
+                            <div class="user-intro" id="userIntro">Hi User</div>
+                            <div class="logout-btn" id="logoutBtn">Logout</div>
+                         </div>
+                    </div>  
+                </div>
+            </div>
+         </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <h2 class="product-list-title text-center">All Products</h2>
+                <div class="product-list-wrapper d-flex flex-row">
+                    <!-- SideBar -->
+                     <div class="product-list-sidebar d-flex flex-column">
+                        <div class="sidebar-title">Search Products</div>
+                        <div class="sidebar-search form-group">
+                            <input type="text" placeholder="Search By Name" class="form-control" id="SearchInp">
+                        </div>
+
+                        <div class="sidebar-title fw-bold">Categories</div>
+                        <div id="categoryList">
+                            <a href="#" class="d-flex text-decoration-none">Electronics</a>
+                            <a href="#" class="d-flex text-decoration-none">KitchenWare</a>
+                            <a href="#" class="d-flex text-decoration-none">Women Fashion</a>
+                            <a href="#" class="d-flex text-decoration-none">Sports</a>
+                            <a href="#" class="d-flex text-decoration-none">Gaming</a>
+                            <a href="#" class="d-flex text-decoration-none">Books</a>
+                        </div>
+
+                        <div class="sidebar-title">Filter By Price</div>
+                        <div class="price-filer">
+                            <div class="price-filter-select d-flex flex-row justify-content-between">
+                                <div class="form-group">
+                                    <select name="minPrice" id="minPrice" class="form-select">
+                                        <option value="0">0</option>
+                                        <option value="1000">1000</option>
+                                        <option value="2000">2000</option>
+                                        <option value="5000">5000</option>
+                                        <option value="10000">10000</option>
+                                        <option value="20000">20000</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="maxPrice" id="maxPrice" class="form-select">
+                                        <option value="0">0</option>
+                                        <option value="1000">1000</option>
+                                        <option value="2000">2000</option>
+                                        <option value="5000">5000</option>
+                                        <option value="10000">10000</option>
+                                        <option value="20000">20000</option>
+                                        <option value="100000">100000</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="price-filter-title d-flex flex-row justify-content-start">
+                                <div class="price-filter-label-min">Min Price</div>
+                                <div class="price-filter-label-max">Max Price</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-danger clear-filter" id="clear">Clear Filters</button>
+                     </div>
+                     <div class="product-list-box" id="productList">
+                        <!-- List of Products -->
+
+                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
+                            <div class="product-img">
+                                <img src="img/headphones.jpg" alt="">
+                            </div>
+                            <div class="product-name text-center">HeadPhones</div>
+                            <div class="product-price text-center">&#8377 1000</div>
+                        </a>
+
+                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
+                            <div class="product-img">
+                                <img src="img/headphones.jpg" alt="">
+                            </div>
+                            <div class="product-name text-center">HeadPhones</div>
+                            <div class="product-price text-center">&#8377 1000</div>
+                        </a>
+
+                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
+                            <div class="product-img">
+                                <img src="img/headphones.jpg" alt="">
+                            </div>
+                            <div class="product-name text-center">HeadPhones</div>
+                            <div class="product-price text-center">&#8377 1000</div>
+                        </a>
+
+                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
+                            <div class="product-img">
+                                <img src="img/headphones.jpg" alt="">
+                            </div>
+                            <div class="product-name text-center">HeadPhones</div>
+                            <div class="product-price text-center">&#8377 1000</div>
+                        </a>
+                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
+                            <div class="product-img">
+                                <img src="img/headphones.jpg" alt="">
+                            </div>
+                            <div class="product-name text-center">HeadPhones</div>
+                            <div class="product-price text-center">&#8377 1000</div>
+                        </a>
+
+                     </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
