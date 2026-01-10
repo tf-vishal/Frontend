@@ -1,0 +1,58 @@
+:root {
+    --cream: #ECDBAD;
+    --sage: #C15143;
+    --deepgreen: #4B402A;
+    --taupe: #CCDBB2;
+    -eggshell: #F1FACF;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: var(--taupe);
+}
+
+h1, h2 , h3 ,h4, h5, h6 {
+    margin: 0;
+}
+
+nav {
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a{
+    color: #C15143;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav li:first-child {
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: var(--deepgreen);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}

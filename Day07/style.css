@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#parent {
+    border: solid red 10px;
+    display: flex;
+    height: 500px;
+    /* flex-direction: row;  */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: start; /* to arrange elemt at main exis*/
+    align-items: center; /*to allign items on cross aixs , this is where teh items should be present */
+    align-content: start; /*to allign items on cross aixs, its for distribution of space */ 
+}
+
+#parent div {
+    border: solid blue 2px;
+    padding: 20px;
+    background-color: bisque;
+    min-width: 100px;
+    /* max-width: 200px; */
+    max-height: 100px;
+}
+
+#child1 {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
