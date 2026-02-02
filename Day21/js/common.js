@@ -8,3 +8,8 @@ async function fetchProductById(id) {
     const product = await axios.get(`https://fakestoreapi.com/products/${id}`);
     return product.data;
 }
+
+function removeloader(){
+    const loaderBackdrop = document.getElementById("loader-backdrop");
+    loaderBackdrop.style.display = 'none';
+}

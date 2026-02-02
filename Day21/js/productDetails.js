@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     async function populateProduct() {
-        const loaderBackdrop = document.getElementById("loader-backdrop");
-        loaderBackdrop.style.display = 'block';
 
 
         const queryParams = getQueryParams(); //this is called from common.js
@@ -28,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             productDescription.textContent = product.description;
 
-            loaderBackdrop.style.display = 'none';
+            
+            removeloader();
         }
     }
     
