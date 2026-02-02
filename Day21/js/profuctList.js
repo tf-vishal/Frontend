@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",async () => {
         products.forEach(products => {
             const productItem = document.createElement("a");
             productItem.target = "_blank";
-            productItem.href = "productDetails.html";
+            productItem.href = `productDetails.html?id=${products.id}`;
             productItem.classList.add("product-item", "text-decoration-none", "d-inline-block");
 
             const productImage = document.createElement("div");
