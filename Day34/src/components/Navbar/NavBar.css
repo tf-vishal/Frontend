@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+#left-div{
+    height: 30px;
+}
+
+#nav-logo{
+    height: 100%;
+}
+#nav-header{
+    font-size: larger;
+}
